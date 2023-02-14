@@ -1,0 +1,59 @@
+<!--created by prashant shukla-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ping Pong</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+     
+        <link rel="stylesheet" href="style.css">
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/addons/p5.sound.min.js"></script>   
+
+    </head>
+    <body background="background1.jpg">
+        <center>
+            <div id="heading" class="btn btn-primary heading">
+                <h2>Ping Pong
+                    <h6>but online</h6>
+                </h2>
+                <button id="instruction" class="btn btn-success" data-toggle="modal" data-target="#myModal">Instructions</button>
+            
+            </div>
+            <br><br>
+            <span>
+            <button id="play" class="btn btn-danger play" onClick="play()">Play</button>
+            <button id="reload" class="btn btn-danger" onClick="reload()">Reload</button>
+            <div id="canvas"></div>   
+            <h4 id="footer" class="btn btn-danger">Developed by Andy Borhade</h4>
+            </center>
+       <div id="myModal" class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+      <button class="close" data-dismiss="modal">&times;</button>
+      <h4>Instructions</h4>
+            </div>
+            <div class="modal-body">
+                <ol>
+                <h5>Welcome to the Instructions!</h5>
+                <h5>This game is a 1v1 Online Ping Pong game against a highly skilled bot(MICRO) which cannot miss, thus, you cannot win.</h5>
+                <h5>But you can set Records! World Records Even!</h5>
+                <h5>The game starts off slow, but increases 0.5 % each time the ball is hit by any paddle.</h5>
+                <h5>The game is over if MICRO gets to 4 points. MICRO scores points from you missing the ball. 4 Strikes and you are OUT OF THERE!</h5>
+                <h5>Each time you return the ball, or hit the ball with YOUR paddle, you will get a point.</h5>
+                <h5>I, Andy Borhade, haven't played my game much, but I did set a record I like. Try to beat it!</h5>
+                <h5>World Record(Andy Borhade): 43</h5>
+                <h5>Send a email to adyant29.borhade@gmail.com if you beat it so I can update it. Please include the word Skoolcade in the subject of the email, and your username, or real name.</h5>
+                <h5>Have fun!</h5>
+            </ol>
+            </div>
+          </div>
+        </div>
+    </div>
+        <script src="main.js"></script>
+    </body>
+</html>
